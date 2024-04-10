@@ -1,0 +1,18 @@
+using System;
+
+public class Program {
+    public static void Main(string[] args) {
+        int M = 1; // Задайте значение M
+        int N = 10; // Задайте значение N
+
+        PrintNaturalNumbers(M, N);
+    }
+
+    // Метод для вывода натуральных чисел от M до N
+    public static void PrintNaturalNumbers(int current, int end) {
+        if (current <= end) {
+            Console.WriteLine(current);
+            PrintNaturalNumbers(current + 1, end); // Рекурсивный вызов для следующего числа
+        }
+    }
+}
